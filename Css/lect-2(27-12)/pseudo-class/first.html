@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para1:hover{
+            background-color: gray;
+            color: white;
+        }
+        #para2:lang(bl){
+            color: blue;
+        }
+        input:focus{
+            background-color: red;
+            color: white;
+        }
+        table td,th{
+            border: 1px solid black;
+        }
+        tr:first-child{
+            font-weight: bold;
+            background-color: transparent;
+        }
+       
+        tr:first-child::after,tr:nth-child(even){
+            background-color: rgb(190, 189, 189);
+        }
+         tr:nth-child(odd){
+            background-color: rgb(181, 158, 158);
+        }
+         /* tr:not(:first-child){
+            background-color: rgb(181, 158, 158);
+        } */
+         #first{
+            background-color: transparent;
+         }
+         #para1::first-letter{
+            color: rgb(173, 90, 48);
+         }
+         #para2::first-line{
+             color: red;
+         }
+    </style>
+</head>
+<body>
+    <p id="para1">Hover Me</p>
+    <p id="para2" lang="bl">This is sec paragraph <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur incidunt consequatur totam provident aspernatur asperiores nihil doloribus qui dicta sunt aliquid tempore exercitationem, minima ipsum saepe adipisci explicabo, sint blanditiis.</p>
+
+    <fieldset>
+        <legend>Form</legend>
+        <input type="text" name="" id="">
+    </fieldset>
+
+    <h1>First-child example</h1>
+    <table>
+        <tr id="first">
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+        <tr>
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+        <tr>
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+        <tr>
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+        <tr>
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+        <tr>
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+        <tr>
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+        <tr>
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+        <tr>
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+        <tr>
+            <td>Item-1</td>
+            <td>Item-2</td>
+            <td>Item-3</td>
+            <td>Item-4</td>
+            <td>Item-5</td>
+            <td>Item-6</td>
+            <td>Item-7</td>
+        </tr>
+    </table>
+</body>
+</html>
