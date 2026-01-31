@@ -1,0 +1,29 @@
+@media screen and (max-width:768px){
+    nav{
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo-div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menuicon{
+        display: inline-block;
+        color: white;
+        margin-right: 20px;
+    }
+    .navbar{
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .navitems{
+        height: 50px;
+        width: 100%;
+    }
+     .navitems a{
+          font-size: 1em;
+     }
+}

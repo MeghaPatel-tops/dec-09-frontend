@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            background-color: black;
+            color: white;
+            display: flex;
+            height: 80px;
+            padding: 0px 100px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-item ul{
+            display: flex;
+        }
+        .nav-item ul li{
+            list-style: none;
+            width: 100px;
+            text-align: center;
+         
+        }
+        .nav-item ul li a{
+            color: white;
+            text-decoration: none;
+        }
+       
+        .drop{
+            position: relative;
+        }
+        .drop:hover .drop-menu{
+            display: flex !important;
+        }
+        .drop-menu{
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            display: none !important;
+            flex-direction: column;
+            background-color: gray;
+            padding: 0px 0px;
+            border: 2px solid black;
+        }
+        .drop-menu li {
+            border: none;
+            text-align: center;
+            border-bottom: 1px solid white;
+            padding: 10px 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo-div">
+            <label for="">MFood</label>
+        </div>
+        <div class="nav-item">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Breakfast</a></li>
+                <li class="drop"><a href="">Lunch</a>
+                    <ul class="drop-menu">
+                        <li><a href="">Indian</a></li>
+                        <li><a href="">Continental</a></li>
+                         <li><a href="">Indian</a></li>
+                        <li><a href="">Continental</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Dinner</a></li>
+                <li><a href="">Desert</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero-div{
+    height: 700px;
+    width: 100%;
+    background-image: url(images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.menuicon{
+    display: none;
+    color: white;
+}
+nav{
+    height: 80px;
+    background-color: transparent;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-text{
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+}
+ .navbar{
+      display: flex;
+      gap:20px
+ }
+ .navitems{
+    padding: 0px 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .navitems:hover{
+    background-color: red;
+ }
+ .navitems a{
+     font-size: 1.5em;
+     color: white;
+     text-transform: uppercase;
+     text-decoration: none;
+ }
+ .active{  
+    background-color: red;
+}

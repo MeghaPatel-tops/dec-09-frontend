@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .main{
+            height: 500px;
+            width: 100%;
+            position: relative;
+           background-image: 
+    /* Semi-transparent black overlay (0.6 opacity) */
+    linear-gradient(rgba(222, 184, 135, 0.8), rgba(222, 184, 135, 0.5)), 
+    /* Your background image URL */
+    url(back.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .main img{
+            height: 100%;
+            width: 100%;
+        }
+        .text-div{
+            z-index: 1;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- <img src="back.jpg" alt=""> -->
+        <div class="text-div">
+            <h1>COFFEE SHOP</h1>
+            <p>BEST coffe shop in surat</p>
+            <button>Contant Us</button>
+        </div>
+    </div>
+</body>
+</html>

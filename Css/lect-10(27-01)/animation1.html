@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            border: 10px solid black;
+        }
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation-name: boxAnimation;
+            animation-delay: 3s;
+            animation-duration: 4s;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes boxAnimation {
+              25%{
+                 transform: translate(200px,0px);
+              }
+              50%{
+                  transform: translate(200px,200px);
+              }
+              75%{
+                  transform: translate(0px,200px);
+              }
+              100%{
+                transform: translate(0px,0px);
+              }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

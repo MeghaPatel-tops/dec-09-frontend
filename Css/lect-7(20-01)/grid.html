@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            border: 10px solid black;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            /* column-gap: 10px;
+            row-gap: 20px; */
+            gap: 20px;
+        }
+        .box{
+            padding: 20px;
+            background-color: aqua;
+        }
+        #box-1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        #box-2{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box-1">1</div>
+    <div class="box" id="box-2">2</div>
+    <div class="box" id="box-3">3</div>
+    <div class="box" id="box-4">4</div>
+    <div class="box" id="box-5">5</div>
+    <div class="box" id="box-6">6</div>
+    <div class="box" id="box-7">7</div>
+    <div class="box" id="box-8">8</div>
+    </div>
+</body>
+</html>

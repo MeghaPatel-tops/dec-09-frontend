@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hero{
+            height: 600px;
+            width: 100%;
+            border: 10px solid black;
+            display: flex;
+            align-items: center;
+        }
+        .plate{
+            height: 400px;
+            width: 400px;
+            margin-left: -300px;          
+            border-radius: 50%;
+            background-image: url(https://themewagon.gitlab.io/restaurant/assets/img/food/plate.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation-name: plateMove;
+            animation-delay: 2s;
+            animation-duration: 2s;
+            animation-timing-function: 1;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+        }
+        @keyframes plateMove {
+              0%{
+                   transform: translate(300px,0px) rotate(180deg);
+              }
+              100%{
+                  transform: translate(500px,0px) rotate(360deg);
+              }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="plate">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 10px solid black;
+             animation-name: boxAnimation;
+            animation-delay: 3s;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            animation-timing-function: ease-in-out;
+        }
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+             border-radius: 50%;
+          
+        }
+        @keyframes boxAnimation {
+              0%{
+                transform: rotate(0deg);
+              }
+              100%{
+                transform: rotate(360deg);
+              }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

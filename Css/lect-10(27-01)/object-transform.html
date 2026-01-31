@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            background-color: red;
+        }
+        #box-1:hover{
+            transform: rotateZ(45deg);
+        }
+        #box-2:hover{
+            transform: skewX(30deg);
+        }
+         #box-3:hover{
+            transform: skewY(30deg);
+        }
+        #box-4:hover{
+            /* transform: scale(0.5); */
+            transform: scale(2);
+        }
+        #box-5:hover{
+            /* transform: translate3d(100px,100px,20px); */
+            transform: translateX(100px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Hover Me for Rotate</div>
+    <div class="box" id="box-2">Hover Me SkewX</div>
+    <div class="box" id="box-3">Hover Me SkewY</div>
+    <div class="box" id="box-4">Hover Me Scale</div>
+    <div class="box" id="box-5">Hover Me</div>
+    <div class="box" id="box-6">Hover Me</div>
+</body>
+</html>
