@@ -1,8 +1,13 @@
 @media screen and (max-width:768px){
+    .hero-div{
+        height: auto;
+    }
     nav{
+        height: auto;
         padding: 20px;
         flex-direction: column;
         align-items: flex-start;
+        background-color: gray;
     }
     .logo-div{
         width: 100%;
@@ -26,4 +31,16 @@
      .navitems a{
           font-size: 1em;
      }
+     .hero-text{
+         position: static;
+         padding: 100px 20px;
+     }
+
+     /* ========================About-div======================== */
+     .about-div{
+            margin:100px 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
 }

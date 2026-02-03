@@ -6,11 +6,12 @@
 }
 
 .hero-div{
+    position: relative;
     height: 700px;
     width: 100%;
     background-image: url(images/banner-bg.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 .menuicon{
     display: none;
@@ -21,7 +22,7 @@ nav{
     background-color: transparent;
     padding: 0px 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .logo-text{
@@ -51,4 +52,102 @@ nav{
  }
  .active{  
     background-color: red;
+}
+.hero-text{
+    position: absolute;
+    padding: 100px;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    animation-name: hero-text-move;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    
+}
+.hero-text h1{
+      font-size: 4em;
+      font-weight: bolder;
+}
+.btn-red{
+    padding: 20px 30px;
+    background-color: red;
+     color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+   
+}
+.btn-white{
+    padding: 20px 30px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 1em;
+}
+.btn-white:hover{
+    background-color: red;
+     color: white;
+}
+
+@keyframes hero-text-move {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+         transform: translateX(0%);
+    }
+    
+}
+/*===========================Genral classes=====================*/
+
+.sub-hed{
+       font-size: 2.5em;
+       color: rgb(49, 49, 49);
+       text-transform: uppercase;
+}
+.border-red-btn{
+    padding: 10px 20px;
+     border: 2px solid red;
+     background-color: white;
+     color: red;
+     border-radius: 10px;
+     font-size: 1em;
+}
+/* =========================About -div====================================== */
+.about-div{
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.about-div h3{
+    font-size: 1.5em;
+    font-weight: lighter;
+     color: rgb(49, 49, 49);
+}
+.about-text{
+    
+     padding-right: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+     font-size: 1em;
+}
+
+.about-img img{
+     width: 100%;;
+}
+/* ==================================Services========================= */
+.row-offer{
+    padding: 50px;
+    display: grid ;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.col{
+    background-color: blue;
+    height: 200px;
+    width: 100%;
 }
