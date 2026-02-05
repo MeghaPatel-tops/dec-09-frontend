@@ -43,4 +43,32 @@
             grid-template-columns: 1fr;
             gap: 50px;
         }
+    /*========================Services div============================*/
+    .row-offer{
+            padding: 50px 30px;
+            display: grid ;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        } 
+    /*=======================review-div=================================*/
+    .review-div{
+         margin-top: 50px;
+         padding: 20px;
+    }    
+    .review-row{
+          flex-direction: column;
+    } 
+    .review-col{
+    padding-right: 0px;
+}  
+/*===========================blog ================================*/
+.blog{
+    margin-top: 100px;
+    padding: 0px 10px;
+}
+.blog-row{
+   
+    grid-template-columns: 1fr;
+    
+}
 }

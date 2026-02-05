@@ -141,13 +141,106 @@ nav{
 }
 /* ==================================Services========================= */
 .row-offer{
-    padding: 50px;
+    padding: 50px 100px;
     display: grid ;
     grid-template-columns: repeat(4,1fr);
-    gap: 10px;
+    gap: 30px;
 }
 .col{
     background-color: blue;
-    height: 200px;
+    /* height: 200px; */
     width: 100%;
+}
+.div-img{
+    height: 250px;
+}
+.div-img img{
+    height: 100%;
+    width: 100%;
+}
+.div-text{
+    padding: 20px 20px;
+    background-color:rgb(62, 38, 38);
+    color: white;
+    display:flex ;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.div-text p{
+    font-size: 12px;
+}
+.div-text button{
+    padding:  10px 20px;
+      color: white;
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 10px;
+}
+.div-text:hover{
+    background-color: red;
+}
+/*=========================review-div=========================*/
+.review-div{
+    margin-top: 100px;
+    padding: 0px 100px;
+}
+.review-row{
+    margin-top: 50px;
+     display: flex;
+     gap: 50px;
+
+}
+.review-col{
+    padding-right: 150px;
+}
+.review-col h3{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: rgb(49, 49, 49);
+    margin-bottom: 20px;
+}
+/*====================================blog====================*/
+.blog{
+    margin-top: 100px;
+    padding: 0px 100px;
+}
+.blog-row{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.card{
+    box-shadow: 3px 3px  5px gray;
+}
+.blog-img{
+    position: relative;
+}
+.blog-date{
+    padding: 20px 10px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+.card img{
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+}
+.blog-text{
+    padding: 20px;
+
+}
+.blog-col button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
 }
