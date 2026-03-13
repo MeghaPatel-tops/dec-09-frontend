@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset >
+        <div id="first"></div>
+        <button onclick="createElementP()">Create parg</button>
+        <button onclick="removeElementP()">Remove parg</button>
+    </fieldset>
+
+
+    <script>
+        let flag=0;
+        function createElementP(){
+             let p1 = document.createElement('p');
+             p1.innerText="Welocme to js tutuorial";
+             p1.setAttribute('id','para1')
+             console.log(p1);
+             document.getElementById('first').appendChild(p1)
+             flag=1;
+        }
+
+        function removeElementP(){
+            if(flag==1){
+            let para1= document.getElementById('para1')
+           // para1.remove();
+           document.getElementById('first').removeChild(para1)
+            flag=0;
+            }
+        }
+    </script>
+</body>
+</html>

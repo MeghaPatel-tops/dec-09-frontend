@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        
+        
+         
+
+        //string conversion
+        //1.boolean to string
+        let flag = true;
+        console.log("typeof flag =",typeof(flag));
+
+        flag = String(flag);
+         console.log("after conversion typeof flag =",typeof(flag));
+
+         //2.Number to string  
+         let num=123;
+         console.log("typeof num =",typeof(num));
+
+         num= String(num);
+          console.log("after conversion typeof num =",typeof(num));
+
+          //Numeric conversion
+             let str="123";
+            console.log("typeof str =",typeof(str));
+
+           str = Number(str);
+          console.log("after conversion typeof str =",typeof(str));
+
+
+          //boolean conversion
+
+          console.log(Boolean(1));
+          console.log(Boolean(" "));
+
+          
+
+
+          function addition(){
+               let num1=prompt("Enter num");
+               let num2 = prompt("Enter num2");
+               num1 = Number(num1);
+               num2= Number(num2);
+               let num3 = num1+num2;
+
+               alert(num3);
+          }
+    </script>
+</head>
+<body>
+    <button onclick="addition()">Addition</button>
+</body>
+</html>

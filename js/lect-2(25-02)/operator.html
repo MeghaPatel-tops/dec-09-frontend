@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //simple intrest
+        //a=10 b=20 swap without using 3 varible
+        //radius area of circle
+        function simpleCalc(){
+               let num1=prompt("Enter num");
+               let num2 = prompt("Enter num2");
+               num1 = Number(num1);
+               num2= Number(num2);
+                let str=`
+                   <ul>
+                    <li>addition:${num1+num2}</li>
+                    <li>sub:${num1-num2}</li>
+                    <li>mul:${num1*num2}</li>
+                    <li>div:${num1/num2}</li>
+                    <li>rem:${num1%num2}</li>
+                    <li>expo:${num1**num2}</li>
+                    </ul>
+                    `
+                document.write(str)
+                console.log(str);
+                
+               
+          }
+
+          let m=10;
+        //   let n = m++;//post incre
+        let n= ++m;//m pre incre
+          console.log("n=",n);
+          
+          console.log("m=",m);
+
+          let x=10;
+         let str=` 1.${x} 2.${++x} 3${x++}`;
+
+         console.log(str);
+         
+          
+          
+
+    </script>
+</head>
+<body>
+    <button onclick="simpleCalc()">Simple Calculator Example</button>
+</body>
+</html>

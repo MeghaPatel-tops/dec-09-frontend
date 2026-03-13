@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero-div{
+            height: 600px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        img{
+            height: 600px;
+            width: 100%;
+        }
+        #left{
+            position: absolute;
+            top: 50%;
+            left: 100px;
+        }
+        #right{
+            position: absolute;
+            top: 50%;
+            right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-div">
+        <button id="left">Left</button> <button id="right">right</button>
+        <img src="first.jpg" alt="" id="img-1">
+        <img src="sec.jpg" alt="" id="img-2">
+        <img src="third.jpg" alt="" id="img-3">
+    </div>
+
+    <script>
+        let counter =1;
+
+        document.getElementById('right').addEventListener('click',()=>{
+
+           
+            //console.log("before counter",counter);
+            
+            let preImg = document.getElementById('img-'+counter);
+            preImg.style.display="none";
+
+            counter++;
+             if(counter > 3){
+                counter=1;
+            }
+             //console.log("after counter",counter);
+            let nextImg = document.getElementById('img-'+counter);
+            nextImg.style.display="block";
+            
+        })
+
+        document.getElementById('left').addEventListener('click',()=>{
+            
+            //console.log("before counter",counter);
+            let preImg = document.getElementById('img-'+counter);
+            preImg.style.display="none";
+
+          
+
+            counter--;
+              if(counter < 1){
+                counter=3
+            }
+
+             //console.log("after counter",counter);
+             let nextImg = document.getElementById('img-'+counter);
+            nextImg.style.display="block";
+
+        })
+        
+    </script>
+</body>
+</html>

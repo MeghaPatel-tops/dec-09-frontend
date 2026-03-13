@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function findMax(){
+             let num1=prompt("Enter Number1");
+             let num2=prompt("Enter Number2");
+             let num3=prompt("Enter Number3");
+             num1 = Number(num1);
+             num2 = Number(num2);
+             num3 = Number(num3);
+            
+            //  if(num1 > num2){
+            //     if(num1 > num3){
+            //         alert("num1 is max")
+            //     }
+            //     else{
+            //         alert("num3 is max");
+            //     }
+            //  }
+            //  else if(num2 > num1){
+            //       if(num2 > num3){
+            //            alert("num2 is max");
+            //       }
+            //       else{
+            //         alert("num3 is max");
+            //       }
+            //  }
+            //  else{
+            //     alert("num3 is max");
+            //  }
+
+             let max = (num1 > num2)?(num1 > num3 ? num1 :num3):(num2 > num3 ?num2:num3);
+             alert(`max value is ${max}`);
+        }
+
+        console.log(null ||2&&3 || 4);
+
+      
+        let name="abc";
+
+
+        name = name ?? 'john'
+        console.log(`User name=${name}`);
+        
+        
+    </script>
+</head>
+<body>
+    <button onclick="findMax()">click</button>
+</body>
+</html>

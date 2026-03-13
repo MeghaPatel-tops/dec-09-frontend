@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+        .box-radius{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+   <fieldset>
+       <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, nesciunt similique? Voluptatem facere incidunt, adipisci ducimus dolores, modi exercitationem nihil est quos ex cumque molestias, tempora at aut accusantium ipsa?</p>
+       <button onclick="changeText()">Text Change</button>
+
+
+   </fieldset>
+   <fieldset>
+          <legend>Create table</legend>
+          <button onclick="createTable()">Click</button>
+          <div id="result"></div>
+   </fieldset>
+
+   <fieldset>
+      <legend>Change image</legend>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcZcx44r4fh-Mlp50JQVmsorCxa7U3tSqMug&s" alt="" height="150px" width="200px" id="img1">
+      <button onclick="changeImage()">Change</button>
+   </fieldset>
+   <fieldset>
+      <legend>Change Shape</legend>
+       <div class="box" id="box-1"></div>
+      <button onclick="changeShape()">Change</button>
+   </fieldset>
+
+   <script>
+       function changeText(){
+           let text = prompt("Enter text");
+           let p1 = document.getElementById('first');
+           p1.textContent=text;
+       }
+
+       function createTable(){
+          let row = prompt("Enter row");
+          let col = prompt("Enter col");
+          let str=`<table border='1'>`
+            for(let i= 1;i<=row;i++){
+                str+=`<tr>`;
+                    for(let j=1;j<=col;j++){
+                        str+=`<td>row-${i} col-${j}</td>`
+                    }
+                    str+=`</tr>`;
+            }
+        console.log(str);
+        document.getElementById('result').innerHTML=str;
+            
+       }
+
+       function changeImage(){
+          let newSrc = prompt('Enter url of image');
+          let img1 = document.getElementById('img1');
+          img1.setAttribute('src',newSrc);
+       }
+
+       function changeShape(){
+          let box1= document.getElementById('box-1');
+          box1.classList.add('box-radius');
+          box1.style.backgroundColor='green'
+          console.log(box1);
+          
+       }
+   </script>
+</body>
+</html>

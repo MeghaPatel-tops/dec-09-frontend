@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolore earum at omnis iure minima aliquid excepturi ipsa porro delectus, qui, nobis voluptatibus quam natus tenetur nisi, reiciendis eveniet explicabo?</p>
+     <p id="sec">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias dolore earum at omnis iure minima aliquid excepturi ipsa porro delectus, qui, nobis voluptatibus quam natus tenetur nisi, reiciendis eveniet explicabo?</p>
+
+
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+
+    <script>
+        let p1 = document.getElementById('first');
+        console.log(p1);
+
+        let box1= document.querySelector('.box');
+        console.log(box1);
+
+         let boxArray= document.querySelectorAll('.box');
+        console.log(boxArray);
+
+        let boxArrayClass = document.getElementsByClassName('box');
+        console.log(boxArrayClass);
+
+        let pArray= document.getElementsByTagName('p');
+
+        console.log(pArray);
+        
+        
+        
+        
+    </script>
+</body>
+</html>

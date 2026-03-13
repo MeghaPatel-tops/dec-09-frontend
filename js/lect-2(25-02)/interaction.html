@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function alertExample(){
+            alert("Javascript loaded");
+        }
+
+        function promptExample(){
+            let userName = prompt("Enter your Name",'jhon');
+            alert(userName)
+        }
+
+        function confirmExample(){
+            let result = confirm("You want delete item?");
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="alertExample()">Alert Example</button>
+    <button onclick="promptExample()">Prompt Example</button>
+     <button onclick="confirmExample()">Confirm Example</button>
+</body>
+</html>

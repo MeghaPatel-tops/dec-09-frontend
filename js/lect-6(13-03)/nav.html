@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navclass{
+            background-color: black;
+        }
+        .hori{
+           
+            display: flex;
+            gap: 30px;
+            padding: 20px 100px;
+
+        }
+        .vert{
+            display: flex;
+            flex-direction: column;
+        }
+        .vert div{
+            padding: 20px 0px;
+            margin: 0px auto;
+            border-bottom: 2px solid white;
+        }
+        .navclass a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navclass hori" id="navbar">
+        <div><a href="">Item-1</a></div>
+        <div><a href="">Item-2</a></div>
+        <div><a href="">Item-3</a></div>
+        <div><a href="">Item-4</a></div>
+        <div><a href="">Item-5</a></div>
+    </nav>
+
+    <br><br>
+   
+
+    <script>
+        window.addEventListener("resize", function () {
+            let width = window.innerWidth;
+            console.log("Window width:", width);
+ 
+            let navbar= document.getElementById('navbar');
+
+            if(width<678){
+                navbar.classList.remove('hori');
+                navbar.classList.add('vert');
+            }
+            else{
+                 navbar.classList.remove('vert');
+                navbar.classList.add('hori');
+            }
+        });
+    </script>
+</body>
+</html>

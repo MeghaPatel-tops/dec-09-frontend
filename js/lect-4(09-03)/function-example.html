@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //================Basic function ==============================
+        let pi=3.14;//global varible
+        'use strict'
+        function Test(){
+            let name1 ='Megha';//local varible
+            console.log("Basic function example"); 
+            console.log(`welcome ${name1}`);    
+            console.log(`in function pi= ${pi}`);
+            
+        }
+
+        
+        Test();
+        //console.log(name1);
+         console.log(`outside function pi= ${pi}`);
+       
+
+         //========================function with parameter===================
+
+         function addition(a,b){
+              console.log(`addition = ${a+b}`);   
+         }
+
+         addition(100,200);
+         addition(12.3,45.7);
+
+         //===================function with default value===============
+         function multiplication(x,y,z=1){
+               let mul = x*y*z;
+               console.log(`mul = ${mul}`);
+               
+         }
+
+         multiplication(2,3,4);
+         multiplication(2,6)
+
+
+
+         //=========================Function returing value===================
+         function simpleIntrest(p,n,r){
+               let i = (p*r*n)/100;
+               return i;
+         }
+        let ans =simpleIntrest(1000,2,3);
+        console.log(`i=${ans}`);
+
+        function FindSquare(num){
+            return num*num;
+        }
+
+        console.log(FindSquare(12));
+        
+        
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let printUserName = function(user){
+            console.log(`username=${user}`);
+            
+        }
+
+        printUserName('megha')
+
+        function even(num){
+            console.log(`${num} is even number`);
+            
+        }
+         function odd(num){
+            console.log(`${num} is odd number`);
+            
+        }
+
+        function EvenOdd(num,even,odd){
+             if(num % 2==0){
+                 even(num);
+             }
+             else{
+                odd(num)
+             }
+        }
+
+        EvenOdd(123,even,odd)
+
+
+        //===================Arrow function==================
+
+        let sum = (a,b)=>a+b;
+        console.log((sum(12,34)));
+
+        console.log(sum(2,3));
+
+        //5! 5*4!  5*4*3!  5*4*3*2! 5*4*3*2*1
+        //function recusion:=>function call itself
+        let factFind = (num)=>{
+            if(num==1){
+                return 1;
+            }
+
+            let f = num* factFind(num-1);
+            return f;
+        }
+
+        console.log(factFind(5));
+        
+        
+        
+
+    </script>
+</body>
+</html>

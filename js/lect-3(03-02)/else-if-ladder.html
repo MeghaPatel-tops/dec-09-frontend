@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function findQudrant(){
+            let x1 = prompt("Enter x1");
+            let x2 = prompt("Enter x2");
+
+            if(x1 > 0 && x2 > 0){
+                alert("first")
+            }
+            else if(x1<0 && x2>0){
+                alert("sec")
+            }
+            else if(x1<0 && x2<0){
+                alert("third")
+            }
+            else if(x1 >0 & x2 <0){
+                alert("forth");
+            }
+            else{
+                alert("Center line");
+            }
+
+        }
+
+        function findNumber(){
+            let num = prompt("Enter Number");
+            //(condition)?true:false;
+            let result = num > 0 ? "Positive" : "Negative";
+            alert(result)     
+        }
+
+        // if(0){
+        //     console.log(true);
+            
+        // }
+        // else{
+        //     console.log(false);
+            
+        // }
+    </script>
+</head>
+<body>
+    <button onclick="findQudrant()">Click</button>
+    <button onclick="findNumber()">Find Number</button>
+</body>
+</html>
