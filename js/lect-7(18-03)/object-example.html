@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let user = {
+            name:"megha",
+            email:'m@gmail.com',
+            contact:'89898989'
+        }
+        let user1={
+            name:'hasti',
+            email:'h@gmail.com',
+            contact:'98987987'
+        }
+
+        console.log(user.name);
+
+        delete user.contact;
+      
+        console.log(user);
+
+        user['address']='101 main street surat';
+
+        console.log(user);
+
+
+        function makeProduct(productName,price){
+            return {
+                productName:productName,
+                price:price
+            }
+        }
+
+        let p1 = makeProduct('tea',400);
+
+        console.log(p1);
+
+        let p2 = makeProduct('sugar',100);
+        console.log(p2);
+
+        console.log("isExits",'address' in user);
+
+        for(key in user){
+            let str = ` key = ${key} value = ${user[key]}`;
+            console.log(str);
+            
+        }
+
+        for(key in p1){
+            let str = ` key = ${key} value = ${p1[key]}`;
+            console.log(str);
+        }
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function Product(pname,price,desci){
+                this.pname = pname;
+                this.price = price;
+                this.desci=desci;
+
+                this.printProduct=function(){
+                    let str=`
+                        product name = ${this.pname};
+                        price=${this.price};
+                        decription=${this.desci}
+
+                    `
+                    console.log(str);
+                    
+                }
+        }
+
+        let p1 = new Product("Tea",400,"TATA TEa");
+        p1.printProduct();
+
+        let p2 = new Product("Sugar",50,"Madhur sugar");
+        p2.printProduct();
+    </script>
+</body>
+</html>

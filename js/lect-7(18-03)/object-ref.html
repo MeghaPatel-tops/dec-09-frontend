@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        "use strict";
+        const user = {
+            name:'hasti'
+        }
+
+        let admin = user;// user memory
+
+        admin.name= "abc";
+
+        user.name='mno'
+
+       
+        user.greet = function(){
+            console.log(`welcome ${this.name}`);
+            
+        }
+         console.log(user);
+
+
+         user.greet()
+
+         let p1={pname:'tea',price:200};
+         let p2={pname:'sugar',price:100};
+
+         function printProduct(){
+              let str = `pname = ${this.pname}  and price =${this.price}`;
+              console.log(str);
+              
+         }
+
+         p1.fun=printProduct;
+         p1.fun();
+
+         p2.fun= printProduct;
+         p2.fun()
+
+
+         function test(){
+              console.log(this);
+              
+         }
+
+         test();
+         
+
+        
+    </script>
+</body>
+</html>
