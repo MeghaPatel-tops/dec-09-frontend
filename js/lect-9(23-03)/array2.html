@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const products = [
+  {
+    id: 1,
+    name: "iPhone 14",
+    category: "phone",
+    price: 799
+  },
+  {
+    id: 2,
+    name: "Samsung Galaxy S23",
+    category: "phone",
+    price: 699
+  },
+  {
+    id: 3,
+    name: "MacBook Air M2",
+    category: "laptop",
+    price: 1199
+  },
+  {
+    id: 4,
+    name: "Dell XPS 13",
+    category: "laptop",
+    price: 999
+  },
+  {
+    id: 5,
+    name: "iPad Pro",
+    category: "tablet",
+    price: 899
+  },
+  {
+    id: 6,
+    name: "Samsung Galaxy Tab S8",
+    category: "tablet",
+    price: 749
+  },
+  {
+    id: 7,
+    name: "OnePlus 11",
+    category: "phone",
+    price: 649
+  }
+];
+    
+
+       let filterArray = products.filter((index,i)=>{
+            if(index.category=="phone"){
+                return index;
+            }
+       })
+
+       console.log(filterArray);
+
+       //map
+
+       let newProduct = products.map((index,i)=>{
+            index.price= index.price+100;
+            return index
+       })
+
+       console.log(newProduct);
+
+       //sort
+       let numArray = [1,34,11,2,23,3,89,8,7];
+
+       function compare(a, b) {
+  if (a > b) return 1; // if the first value is greater than the second
+  if (a == b) return 0; // if values are equal
+  if (a < b) return -1; // if the first value is less than the second
+}
+
+       let sortArray = numArray.sort(compare);
+       console.log(sortArray);
+       
+
+       //reverse split join
+        let fruits = ['apple','banana','kiwi','orange'];
+       let rev = fruits.reverse();
+
+       console.log(rev);
+
+       let fruitsStr = fruits.join("-");
+
+       console.log(fruitsStr);
+
+       let fArry = fruitsStr.split("-");
+
+       console.log(fArry);
+
+       //reduce
+       let totalPrice = products.reduce((sum,index,i)=>{
+             sum=sum+index.price;
+             return sum
+
+             
+       },0)
+
+       console.log(totalPrice);
+       
+       
+       
+       
+       
+       
+    </script>
+</body>
+</html>

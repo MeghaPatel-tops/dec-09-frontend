@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+         let fruits = ['apple','banana','kiwi','orange'];
+         //delete fruits[1];
+
+         fruits.splice(1,1)
+         console.log(fruits);
+
+         fruits.splice(1,1,"graps");
+          console.log(fruits);
+
+          let newList = fruits.slice(1,3);
+          console.log(newList);
+
+          fruits.forEach((index,i,fruits)=>{
+               console.log(index.toUpperCase());
+               
+          })
+
+          //serching element in array
+
+          let ans = fruits.indexOf('graps');
+          console.log(ans);
+
+          ans = fruits.includes('graps');
+          console.log(ans);
+
+
+          //find method
+          let users=[
+            {
+                name:"Megha",
+                email:"m@gmail.com",
+                contact:"97987987"
+            },
+              {
+                name:"Malay",
+                email:"malay@gmail.com",
+                contact:"987878787"
+            }
+            ,  {
+                name:"Nilay",
+                email:"nilay@gmail.com",
+                contact:"9789798789"
+            }
+          
+          ];
+
+          let findObj = users.find((index,i)=>{
+                if(index.name=="Megha"){
+                    return index
+                }
+          })
+
+          console.log(findObj);
+          
+          
+          
+          
+         
+    </script>
+</body>
+</html>
