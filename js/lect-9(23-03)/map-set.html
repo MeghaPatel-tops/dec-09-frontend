@@ -16,8 +16,77 @@
         console.log(mymap);
 
         console.log(mymap.get(true));
-        
+
+        let x=100;//
+         x=200;  //let not redeclare  reassign
+
+         const pi=3.14;
+         //pi=2.7;// not redeclare not reassign
+
+         var y=100;
+         console.log(y);//var redeclare redefine
+         
+
+         var y=90;
+         console.log(y);
+
+         //scope:=>block
+
+         function test(){
+              let num=12;
+              if(num>10){
+                var msg="allow";
+              }
+              console.log(msg);
+              
+         }
+
+         test();
+
+         function printMsg(){
+            let x=100;
+            if(x>50){
+                let x=400;
+                console.log(x);
+                
+            }
+         }
+
+         printMsg();
+
+         // '5'+3 =53  
+         // '5'-3=2
+         //true+false= 1+0 =1
+
+         let numArray =[12,3,5,7,44,68,90];
+
+         let oddArray = numArray.filter((index,i)=>{
+               if(index % 2 != 0){
+                  return index;
+               }
+         })
+         
+         console.log(oddArray);
+
+         let sum = numArray.reduce((sum,index)=>sum+=index,0);
+
+         console.log(sum);
+
+         
+         
+
+         
+         
+
+    let str='Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet praesentium, facilis aspernatur, officia vero quae neque, fuga perferendis nostrum fugit eos quo nihil sit nisi excepturi dicta totam quisquam. Illo!'
+    
+    console.log(str.substring(0,16));
+    
+    
         
     </script>
+    
+
+
 </body>
 </html>

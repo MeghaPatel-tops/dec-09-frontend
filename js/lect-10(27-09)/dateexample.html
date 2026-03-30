@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let cTime = new Date();
+        console.log(cTime);
+        
+        let start = Date.now();
+        console.log(start);
+        
+
+        let tomorowDate = new Date(start+48*3600*1000)
+        console.log(tomorowDate);
+
+        //Y-m-d h:i:s
+        let myDate = `${cTime.getFullYear()}-${cTime.getMonth()+1}- ${cTime.getDate()}  ${cTime.getHours()}:${cTime.getMinutes()}:${cTime.getSeconds()}`;
+
+        console.log(myDate);
+
+        function diffGetTime(date1, date2) {
+            return date2.getTime() - date1.getTime();
+        }
+
+        let diff =diffGetTime(cTime,tomorowDate);
+
+        let date  = diff / (1000*3600);
+        console.log(date);
+
+        let dayDiff = parseInt(date)  /24;
+
+        console.log(dayDiff);
+        
+        
+        
+                    
+        
+    </script>
+</body>
+</html>

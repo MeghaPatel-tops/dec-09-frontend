@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function OuterFunction(msg){
+             
+            return function innnerFunction(){
+                let a=10;
+                console.log(msg);
+                
+            }
+           
+            
+        }
+
+        function OuterCount(count){
+            return function innerCounter(){
+                  count++;
+                 return count
+            }
+        }
+
+       let out= OuterFunction('hello');
+       console.log(out);
+       out();
+
+       let counter = OuterCount(0);
+        let c1=counter();
+        console.log(c1);
+        
+        let c2=counter();
+        console.log(c2);
+        
+
+       
+    </script>
+</body>
+</html>

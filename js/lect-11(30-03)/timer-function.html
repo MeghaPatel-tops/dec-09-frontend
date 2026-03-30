@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    .clock{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: black;
+        color: wheat;
+        padding: 20px 30px;
+        width: 300px;
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+    
+   <div id="dClock" class="clock"></div>
+    <!-- <button onclick="printMsg()">
+        click
+    </button> -->
+    <h1 id="msg"></h1>
+
+    <script>
+        function printMsg(){
+            alert('welcome msg print on screen after 2sec');
+            document.getElementById('msg').innerText="Welcome to tops tech";
+           
+        }
+         setTimeout(printMsg,2000)
+
+        // setInterval(() => {
+        //     console.log("setinterval called");
+            
+        // }, 2000);
+
+        function createClock(){
+            let cTime = new Date();
+            let myDate = `${cTime.getFullYear()}-${cTime.getMonth()+1}- ${cTime.getDate()}  ${cTime.getHours()}:${cTime.getMinutes()}:${cTime.getSeconds()}`;
+
+        console.log(myDate);
+        document.getElementById('dClock').innerHTML=myDate;
+        }
+
+       
+
+        setInterval( createClock, 1000);
+    </script>
+</body>
+</html>
