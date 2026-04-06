@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class Maths{
+            _a=100;
+            #privateData="abc"
+
+            printVal(){
+                console.log("a=",this._a);
+                console.log('private data in class',this.#privateData);
+                
+                
+            }
+        }
+
+        let m1 = new Maths();
+        m1.a=400;
+       console.log( m1.privateData);
+       
+        m1.printVal();
+        console.log(m1._a);
+        
+    </script>
+</body>
+</html>

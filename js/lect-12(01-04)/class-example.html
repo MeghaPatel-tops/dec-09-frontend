@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class User{
+            //constructor method
+            constructor(name,email,contact){
+                this.name=name;
+                this.email=email,
+                this.contact=contact
+            }
+
+            get name() {
+                    return this._name;
+            }
+            set name(value){
+                if(value.length < 4){
+                    console.log("Enter valid username");
+                    return ;
+                    
+                }
+                this._name=value
+            }
+
+            //emember function
+            printUser(){
+                console.log('username',this.name);
+                console.log('email',this.email);
+                console.log('contact',this.contact);
+            }
+
+
+        }
+
+        let kaushik = new User('','k@gmail.com','878787878');
+        kaushik.printUser();
+
+        let rohit = new User('rohit','r@gmail.com','8878778778');
+        rohit.printUser();
+
+        console.log(kaushik.email);
+        
+    </script>
+</body>
+</html>

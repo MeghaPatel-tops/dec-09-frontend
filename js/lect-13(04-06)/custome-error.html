@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>Form</legend>
+        <div id="error" style="color: red;"></div>
+          <form id="frm1" method="post">
+            <label for="">Enter You Name</label>
+            <input type="text" name="" id="username">
+            <input type="submit" value="Submit">
+          </form>
+    </fieldset>
+
+    <script>
+        class  ValidateForm extends Error{
+            constructor(message){
+                super(message)
+                
+            }
+        }
+        document.getElementById('frm1').addEventListener('submit',(e)=>{
+            e.preventDefault();
+            try {
+                    let username = document.getElementById('username');
+                    if(username.value==''){
+                        throw new ValidateForm('Invalid Username')
+                    }
+            } catch (error) {
+                console.log(error);
+                document.getElementById('error').innerText=error.message
+            }
+        })
+    </script>
+</body>
+</html>

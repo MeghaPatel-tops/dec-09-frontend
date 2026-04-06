@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        function printProduct(catid,catname){
+            let str=`
+                Category:${catid}
+                catname:${catname}
+                pname:${this.pname},
+                desc:${this.desc},
+                
+            `
+            console.log(str);
+            
+        }
+
+        let product1={
+            pname:'sugar',
+            desc:"Madhur",
+            price:100
+        }
+
+        printProduct.call(product1,101,'gorces');
+
+        printProduct.apply(product1,[101,'gorces'])
+
+        let prodctDisplay = printProduct.bind(product1,[101,'gorces']);
+
+        console.log(prodctDisplay);
+
+        prodctDisplay();
+        
+    </script>
+</body>
+</html>

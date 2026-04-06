@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="checkAuth()">Click</button>
+
+    <script>
+
+        function test(){
+             try {
+              console.log(m);
+              
+             } catch (error) {
+                console.log(error.message);
+                
+             }
+             finally{
+                console.log("task done");
+                
+             }
+            
+        }
+
+        function checkAuth(){
+            try {
+                let role= prompt('Enter your role');
+                if(role != 'admin'){
+                    throw new Error('UNAUTHORIZED ACCESS');
+                }
+            } catch (error) {
+                console.log(error);
+                
+            }
+        }
+        test();
+        
+        console.log("test data");
+        
+    </script>
+</body>
+</html>

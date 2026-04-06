@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        class Account{
+            constructor(holder,email,accno,bal){
+                this.holder=holder,
+                this.email=email,
+                this.accno=accno,
+                this.bal=bal
+            }
+
+            AccountInfo(){
+                let str=`
+                    Holder Name:${this.holder},
+                    Email:${this.email},
+                    Acoount No:${this.accno},
+                    Balance:${this.bal}
+                `
+                console.log(str);
+                
+            }
+        }
+
+        class Saving extends Account{
+              constructor(per,holder,email,accno,bal){
+                 
+                  super(holder,email,accno,bal);
+                  this.per=per;
+                 
+              }
+
+              Calc(){
+                  let amount = this.bal + ((this.bal*this.per)/100);
+                  console.log(amount);
+                  
+              }
+        }
+
+        let accc1= new Saving(2,'megha','m@gmail.com',20011,2000);
+        accc1.AccountInfo();
+        accc1.Calc();
+
+    </script>
+</body>
+</html>

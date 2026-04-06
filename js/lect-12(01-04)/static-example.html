@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        class Maths{
+            static x=100;
+            constructor(a){
+                this.a=a;
+            }
+        }
+
+        let m1 = new Maths(10);
+        console.log(m1.a);
+        console.log('static varible for m1',Maths.x);
+        
+
+        let m2 = new Maths(20);
+        console.log(m2.a);
+         console.log('static varible for m2',Maths.x);
+        
+        
+    </script>
+</body>
+</html>
